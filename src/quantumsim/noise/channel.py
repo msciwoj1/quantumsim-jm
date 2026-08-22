@@ -18,7 +18,9 @@ def kron_kraus_channels(kraus1: np.ndarray, kraus2: np.ndarray) -> np.ndarray:
     return out.reshape(k * l, n * m, n * m)
 
 
-def extend_kraus_channel(kraus: np.ndarray, idx: int, dims: tuple[int, ...]) -> np.ndarray:
+def extend_kraus_channel(
+    kraus: np.ndarray, idx: int, dims: tuple[int, ...]
+) -> np.ndarray:
     """Extend a single Kraus channel to act on multiple qudits."""
     dims_before = dims[:idx]
     dims_after = dims[idx + 1 :]

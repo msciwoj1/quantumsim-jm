@@ -3,7 +3,6 @@ from typing import Literal
 
 import numpy as np
 
-
 # The identity element is scaled so that tr(LAMBDA_0 @ LAMBDA_0) == 2.
 LAMBDA_0 = np.eye(3, dtype=complex) * np.sqrt(2 / 3)
 LAMBDA_1 = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex)
