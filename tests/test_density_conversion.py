@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 
 from quantumsim.random.matrix import hilbert_schmidt_matrix
-from quantumsim.transfer_matrix import get_density_matrix, get_transfer_vector
+from quantumsim.transfer.basis import get_density_matrix, get_transfer_vector
 
 
 @pytest.mark.parametrize(

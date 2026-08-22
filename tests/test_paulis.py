@@ -3,16 +3,16 @@
 import numpy as np
 import pytest
 
-from quantumsim.pauli import get_pauli_product
+from quantumsim.basis.pauli import get_pauli_product
 
 
 @pytest.mark.parametrize(
     "paulistr",
     [
-        "X",
-        "XZ",
-        "XYY",
-        "XZIY",
+        (1,),
+        (1, 3),
+        (1, 2, 2),
+        (1, 3, 0, 2),
     ],
 )
 def test_size_and_unitarity(paulistr):
